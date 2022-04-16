@@ -1,0 +1,27 @@
+@import "./src/styles/variables";
+.item{
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 310px;
+  max-height: 500px;
+  font-family: Montserrat, sans-serif;
+  box-sizing: border-box;
+  .item-description{
+    padding: 20px 5px 20px;
+    border: 1px solid gray;
+  }
+  .img{
+    display: block;
+    width: 100%;
+  }
+  .item-title{
+    margin-bottom: 5px;
+    color: $secondColor;
+  }
+  .date{
+    margin-bottom: 20px;
+  }
+  .description{
+    margin-bottom: 5px;
+  }
+}
