@@ -1,4 +1,4 @@
-@import "./src/styles/variables";
+@import "../../../styles/variables";
 .item{
   margin-top: 20px;
   margin-left: 20px;
@@ -16,7 +16,7 @@
   }
   .item-title{
     margin-bottom: 5px;
-    color: $secondColor;
+    color: $secondcolor
   }
   .date{
     margin-bottom: 20px;
