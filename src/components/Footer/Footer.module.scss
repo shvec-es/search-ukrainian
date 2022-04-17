@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+.footer {
+    height: 72px;
+    background: linear-gradient(to bottom, $accentcolor 75%, $secondAccentcolor 25%);
+
+    &_text {
+        text-align:  center;
+        padding-top: 19px;
+        font-family: 'Montserrat';
+        font-size: 15px;
+        line-height: 1.2;
+        color: $additionalcolor;
+    }
+}
+
