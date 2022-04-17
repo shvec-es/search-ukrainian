@@ -45,6 +45,30 @@ const List = () => {
       oblast: 'Донецька',
       city: 'Маріуполь',
     },
+    {
+      id: uuidv4(),
+      img: 'http://kartina-optom.com.ua/images/stories/virtuemart/product/50%D1%8550.jpg',
+      name: 'Колесник Валерій Валерійович',
+      dateOfBirth: '24.07.1959',
+      oblast: 'Донецька',
+      city: 'Маріуполь',
+    },
+    {
+      id: uuidv4(),
+      img: 'http://kartina-optom.com.ua/images/stories/virtuemart/product/50%D1%8550.jpg',
+      name: 'Колесник Валерій Валерійович',
+      dateOfBirth: '24.07.1959',
+      oblast: 'Донецька',
+      city: 'Маріуполь',
+    },
+    {
+      id: uuidv4(),
+      img: 'http://kartina-optom.com.ua/images/stories/virtuemart/product/50%D1%8550.jpg',
+      name: 'Колесник Валерій Валерійович',
+      dateOfBirth: '24.07.1959',
+      oblast: 'Донецька',
+      city: 'Маріуполь',
+    },
   ]);
 
   return (
