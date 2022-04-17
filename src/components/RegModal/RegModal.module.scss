@@ -1,0 +1,108 @@
+@import '../../styles/variables';
+
+.modal-container{
+  width: 1300px;
+  padding: 40px;
+  margin: 0 auto;
+  background: $accentcolor;
+  box-sizing: border-box;
+}
+
+.form{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.input{
+  box-sizing: border-box;
+  width: 378px;
+  height: 36px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0px 10px;
+}
+
+.label-description{
+  display: flex;
+}
+
+.input-thumb{
+  display: inline-block;
+  margin-bottom:  15px;
+  &:not(:last-child){
+    margin-right: 35px;
+  }
+  &:nth-child(3n + 3){
+    margin-right: 0px;
+  }
+}
+
+.input-label, .label-description{
+  display: flex;
+  font-family: Montserrat, sans-serif;
+  color: $additionalcolor;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+
+}
+
+.description{
+  width: 771px;
+  height: 116px;
+  resize: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 10px;
+}
+.text_area-list{
+  display: flex;
+  justify-content: center;
+  li:not(:last-child){
+    margin-right: 35px;
+  }
+}
+
+
+.submit-btn{
+  background: $secondAccentcolor;
+  width: 378px;
+  height: 36px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  color: $maincolor;
+  cursor: pointer;
+}
+
+.add-picture{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $additionalcolor;
+  width: 378px;
+  height: 36px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  color: $maincolor;
+  cursor: pointer;
+  margin-top: 29px;
+  margin-bottom: 63px;
+  .svgBtn{
+    padding-right: 20px;
+  }
+}
