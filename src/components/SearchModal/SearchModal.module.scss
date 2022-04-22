@@ -9,20 +9,23 @@
 }
 
 .list {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
 }
 
 .item {
-width: 378px;
-height: 66px;
+    display: flexbox;
+    height: 66px;
+    width: 378px;
+    margin-bottom: 15px;
+    
+    &:not(:last-child) {
+        margin-right: 42px;
+    }
 
-&:not(:last-child) {
-    margin-right: 42px;
-}
-&:nth-child(3n + 3) {
-    margin-right: 0;
-}
+    &:nth-child(3n + 3) {
+        margin-right: 0;
+    }
 }
 
 .label {
@@ -31,6 +34,10 @@ height: 66px;
     font-size: 16px;
     line-height: 1.18; 
     color: $additionalcolor;
+
+    &_text {
+        margin-bottom: 10px;
+    }
 }
 
 .input {
@@ -43,6 +50,17 @@ height: 66px;
     outline: none;
 }
 
+.special_item {
+    display: flex;
+    align-items:flex-end;
+    width: 378px;
+
+    input{
+        width: 195px;
+        margin-right: 35px;
+    }
+}
+
 .btn {
     width: 148px;
     height: 36px;
@@ -53,4 +71,5 @@ height: 66px;
     text-transform: uppercase;
     background: $secondAccentcolor;
     color: $maincolor;
+    cursor: pointer;
 }
