@@ -7,44 +7,44 @@ const SearchModal = () => {
         <ul className={styles.list}>
           <li className={styles.item}>
             <label className={styles.label}>
-              Ім’я:
+              <p className={styles.label_text}>Ім’я:</p>
               <input className={styles.input} type="text" />
             </label>
           </li>
           <li className={styles.item}>
             <label className={styles.label}>
-              Прізвище:
+              <p className={styles.label_text}>Прізвище:</p>
               <input className={styles.input} type="text" />
             </label>
           </li>
           <li className={styles.item}>
             <label className={styles.label}>
-              По батькові:
+              <p className={styles.label_text}>По батькові:</p>
               <input className={styles.input} type="text" />
             </label>
           </li>
           <li className={styles.item}>
             <label className={styles.label}>
-              Місто:
+              <p className={styles.label_text}>Місто:</p>
               <input className={styles.input} type="text" />
             </label>
           </li>
           <li className={styles.item}>
             <label className={styles.label}>
-              Область:
+              <p className={styles.label_text}>Область:</p>
               <input className={styles.input} type="text" />
             </label>
           </li>
           <li className={styles.item}>
-            <label className={styles.label}>
-              Рік народження:
-              <input className={styles.input} type="text" />
-            </label>
-          </li>
-          <li>
-            <button className={styles.btn} type="submit">
-              Знайти
-            </button>
+            <div className={styles.special_item}>
+              <label className={styles.label}>
+                <p className={styles.label_text}>Рік народження:</p>
+                <input className={styles.input} type="text" />
+              </label>
+              <button className={styles.btn} type="submit">
+                Знайти
+              </button>
+            </div>
           </li>
         </ul>
       </form>
