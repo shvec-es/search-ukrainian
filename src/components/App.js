@@ -10,8 +10,10 @@ function App() {
     <Container>
       <Header />
       <Hero />
-      <TitleMain />
-      <List />
+      <main>
+        <TitleMain />
+        <List />
+      </main>
       <Footer />
     </Container>
   );

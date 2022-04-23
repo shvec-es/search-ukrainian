@@ -87,22 +87,40 @@
 }
 
 .add-picture{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: $additionalcolor;
-  width: 378px;
-  height: 36px;
-  border: none;
-  outline: none;
-  font-weight: 700;
+  position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat, sans-serif;
+    background: $additionalcolor;
+    width: 378px;
+    height: 36px;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    color: $maincolor;
+    cursor: pointer;
+    margin-top: 29px;
+    margin-bottom: 63px;
+    .svgBtn{
+      padding-right: 20px;
+    }
+    .svgSuccBtn{
+      width: 30px;
+      height: 30px;
+      padding-left: 20px;
+    }
+}
+.befEl{
+  position: absolute;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
-  line-height: 1.18;
-  color: $maincolor;
-  cursor: pointer;
-  margin-top: 29px;
-  margin-bottom: 63px;
-  .svgBtn{
-    padding-right: 20px;
-  }
+  color: #ffffff;
+  top: 50px;
+  left: 40px;
+  width: 300px;
+  height: 20px;
+  z-index: 999;
 }
