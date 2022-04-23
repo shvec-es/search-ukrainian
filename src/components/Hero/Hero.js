@@ -12,7 +12,7 @@ function Hero() {
     <>
       {isSearchModal && (
         <ModalWindow closeModal={setSearchModal}>
-          <SearchModal />
+          <SearchModal closeModal={setSearchModal} />
         </ModalWindow>
       )}
       {isRegModal && (
