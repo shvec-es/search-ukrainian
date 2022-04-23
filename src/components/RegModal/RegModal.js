@@ -15,17 +15,27 @@ const RegModal = () => {
     description: '',
     picture: ''
   });
+  const [pictureFile, setPictureFile] = useState(null);
   const handleChange = (e) => {
     const { name, value } = e.target
     setFormState({ ...formState, [name]: value })
   }
 
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      ApiService.postCard(formState)
-    }
+  const fileSelectedHandler = (e) => {
+    setFormState({
+      ...formState,
+      picture: e.target.value
+    })
+    setPictureFile(e.target.files[0])
 
-    return (
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    ApiService.postCard(formState, pictureFile)
+  }
+
+  return (
       <div className={styles['modal-container']}>
         <form onSubmit={handleSubmit}>
           <ul className={styles['list']}>
@@ -135,7 +145,7 @@ const RegModal = () => {
               <input name='picture'
                      id='from-add_picture'
                      type='file'
-                     onChange={handleChange}
+                     onChange={fileSelectedHandler}
                      value={formState.picture}
                      hidden
                      accept="image/*" multiple={false}
