@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './SearchModal.module.scss';
+import ApiService from '../ApiServices/ApiService';
 
 const SearchModal = ({ closeModal: setSearchModal }) => {
   const initialState = {
@@ -14,13 +15,6 @@ const SearchModal = ({ closeModal: setSearchModal }) => {
 
   const { name, surname, midname, city, region, birth_year } = searchForm;
 
-  // useEffect(() => {
-  //   fetch('https://localhost:3000/api/posts')
-  //     .then(res => res.json())
-  //     .then(data => console.log(data))
-  //     .catch(err => console.log(err));
-  // }, []);
-
   const handleChange = e => {
     const { name, value } = e.target;
     setSearchForm(prevState => ({ ...prevState, [name]: value }));
@@ -28,7 +22,7 @@ const SearchModal = ({ closeModal: setSearchModal }) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-
+    ApiService.getAll(searchForm);
     setSearchModal(false);
     setSearchForm(initialState);
   };
