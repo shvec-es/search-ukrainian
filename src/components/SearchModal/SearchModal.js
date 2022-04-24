@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './SearchModal.module.scss';
-import ApiService from '../ApiServices/ApiService';
+// import ApiService from '../ApiServices/ApiService';
 
 const SearchModal = ({ closeModal: setSearchModal }) => {
   const initialState = {
@@ -22,7 +22,7 @@ const SearchModal = ({ closeModal: setSearchModal }) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    ApiService.getAll(searchForm);
+    // ApiService.getAll(searchForm);
     setSearchModal(false);
     setSearchForm(initialState);
   };
